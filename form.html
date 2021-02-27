@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 1</title>
-
+    <title>Form</title>
     <style>
-        
         label {
             display: block;
         }
@@ -16,13 +14,14 @@
             display: block;
         }
 
-        input[type="radio"] {
-            display: inline;
-        }
-        input[type="checkbox"] {
-            display: inline;
+        input {
+            display: block;
         }
 
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +75,9 @@
         <fieldset>
             <legend>An interesting fact about you</legend>
 
-            <label><p>Do you love cats?</p></label> 
+            <label>
+                <p>Do you love cats?</p>
+            </label> 
             <input type="radio" name="yes_no">Yes</input>
             <input type="radio" name="yes_no">No</input>
 
@@ -84,6 +85,7 @@
             <p>What is your favourite colour?</p> 
             </label>
             <input type="color">
+
      </div>
         </fieldset>
     </div>
