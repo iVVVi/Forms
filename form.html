@@ -10,12 +10,8 @@
             display: block;
         }
 
-        span {
-            display: block;
-        }
-
-        input {
-            display: block;
+        .qwe {
+            display: inline-block;
         }
 
         input[type="radio"],
@@ -30,27 +26,27 @@
         <fieldset>
             <legend>Personal information</legend>
             <label>
-                <p>Surname:</p> 
+                Surname:
             <input type="text" placeholder="Your surname" name="surname" required>
             </label>
 
             <label>
-                <p>Name:</p> 
+                Name:
             <input type="text" placeholder="Your name" name="name" required>
             </label>
 
             <label>
-                <p>How old are you?:</p> 
+                How old are you?:
             <input type="number" placeholder="Your age" name="age" required>
             </label>
 
             <label>
-                <p>Full date of birth:</p> 
+                Full date of birth:
             <input type="date" placeholder="mm/dd/yyyy" name="date of birth" required>
             </label>
 
             <label>
-                <p>I accept the therm of the agreement</p> 
+                I accept the therm of the agreement
                 <input type="checkbox" name="acception of the term of the agreement">
             </label>
         </fieldset>
@@ -60,12 +56,12 @@
         <fieldset>
             <legend>Registration</legend>
             <label>
-                <p>E-mail:</p> 
+                E-mail:
             <input type="email" placeholder="email@example.com" name="email" required>
             </label>
 
             <label>
-                <p>Password:</p> 
+                Password:
             <input type="password" placeholder="Create password" name="password" required>
             </label>
         </fieldset>
@@ -75,54 +71,57 @@
         <fieldset>
             <legend>An interesting fact about you</legend>
 
-            <label>
-                <p>Do you love cats?</p>
+            <label class="qwe">
+                Do you love cats?
             </label> 
             <input type="radio" name="yes_no">Yes</input>
             <input type="radio" name="yes_no">No</input>
 
             <label>
-            <p>What is your favourite colour?</p> 
+            What is your favourite colour?
             </label>
             <input type="color" name="favourite colour">
 
             <label>
-            <p>What time do you go to bed?</p> 
+            What time do you go to bed?
             </label>
             <input type="time" name="time">
 
             <label>
-            <p>What is your favourite brand of cars?</p> 
+            What is your favourite brand of cars?
             </label>
             <select>
-                <option value="BMW">
-                <option value="Audi">
-                <option value="Lada">
-              </select>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Lada">Lada</option>
+            </select>
 
-              <label>
-                <p>How do you rate our work?</p> 
-                </label>
-                <input type="range" name="range">
-     </div>
+            <label>
+             How do you rate our work?
+            </label>
+            <input type="range" name="range">
+        </fieldset>
+        </div>
 
-     <div>
+        <div>
         <fieldset>
             <legend>Additional info:</legend>
            
             <label>
-                <p>Comments</p>
-            <input type="textarea" name="comment">
+                Comments
+                <textarea name="rate" rows="2" cols="30">
+                </textarea>
            </label>
-
+           
            <label>
-            <p>Would you recommend us?</p>
-        <input type="text" size="3" name="yesno" min="yes" max="no" value="yes">
-       </label>
-
-     </div>
-        </fieldset>
-    </div>
+            Would you recommend us?
+            <select>
+                <option value="yes">yes</option>
+                <option value="Audi">no</option>
+            </select>
+            </label>
+            </fieldset>
+            </div>
     </form>
 </body>
 </html>
