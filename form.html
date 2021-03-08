@@ -73,33 +73,34 @@
 
             <label class="qwe">
                 Do you love cats?
+                <input type="radio" name="yes_no">Yes</input>
+                <input type="radio" name="yes_no">No</input>
             </label> 
-            <input type="radio" name="yes_no">Yes</input>
-            <input type="radio" name="yes_no">No</input>
+            
 
             <label>
             What is your favourite colour?
-            </label>
             <input type="color" name="favourite colour">
+            </label>
 
             <label>
             What time do you go to bed?
-            </label>
             <input type="time" name="time">
+            </label>
 
             <label>
             What is your favourite brand of cars?
-            </label>
-            <select>
+            <select multiple>
                 <option value="BMW">BMW</option>
                 <option value="Audi">Audi</option>
                 <option value="Lada">Lada</option>
             </select>
+            </label>
 
             <label>
              How do you rate our work?
+             <input type="range" name="range">
             </label>
-            <input type="range" name="range">
         </fieldset>
         </div>
 
@@ -117,10 +118,13 @@
             Would you recommend us?
             <select>
                 <option value="yes">yes</option>
-                <option value="Audi">no</option>
+                <option value="no">no</option>
             </select>
             </label>
             </fieldset>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
             </div>
     </form>
 </body>
